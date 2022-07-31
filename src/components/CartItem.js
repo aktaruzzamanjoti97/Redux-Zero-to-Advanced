@@ -6,7 +6,7 @@ import "./Cart.css";
 const CartItem = ({ name, quantity, total, price, id }) => {
   const dispatch = useDispatch();
   const removeHandler = () => {
-    dispatch(cartActions.removeFromCart(id));
+    dispatch(cartActions.removeCart(id));
   };
   const addHandler = () => {
     dispatch(
